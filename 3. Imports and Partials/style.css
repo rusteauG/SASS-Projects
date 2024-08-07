@@ -1,1 +1,25 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 50vh;
+  background-color: dodgerblue;
+}
+
+section {
+  height: 20vh;
+  background-color: crimson;
+}
+
+article {
+  height: 10vh;
+  background-color: teal;
+}
+
+footer {
+  height: 20vh;
+  background-color: steelblue;
+}/*# sourceMappingURL=style.css.map */
