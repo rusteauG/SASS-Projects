@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image in Flexbox</title>
+    <style>
+      .card-container {
+        display: flex;
+        justify-content: center; /* Center the card container if needed */
+        align-items: center; /* Center the card container if needed */
+        padding: 20px;
+      }
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #ccc;
+        padding: 10px;
+        max-width: 400px; /* Max width for the card */
+        box-sizing: border-box;
+      }
+
+      .card-img {
+        max-width: 100%;
+        border: 1px solid #ccc;
+        padding: 10px;
+        max-width: 400px; /* Max width for the card */
+        box-sizing: border-box;
+      }
+      .card-img {
+        max-width: 100%;
+        height: auto;
+        flex: 1 1 auto;
+        padding: 10px;
+        object-fit: cover; /* Ensure the image covers the area */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card-container">
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1603574670812-d24560880210?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80
+      "
+          alt="Card Image"
+          class="card-img"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1603574670812-d24560880210?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80
+      "
+          alt="Card Image"
+          class="card-img"
+        />
+      </div>
+    </div>
+  </body>
+</html>

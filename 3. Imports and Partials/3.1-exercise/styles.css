@@ -5,22 +5,32 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0.5rem;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
   padding: 15px;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background: white;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 nav .logo-container {
   margin-left: 40px;
 }
 nav ul {
   margin-right: 20px;
+  display: flex;
+  align-items: center;
 }
 nav li {
   display: inline-block;
@@ -30,6 +40,7 @@ nav li {
 nav li a {
   text-decoration: none;
   color: #000;
+  transition: background-color 0.3s, color 0.3s, border-radius 0.3s;
 }
 nav li a:hover {
   color: lightgreen;
@@ -50,7 +61,7 @@ main {
 }
 main h1 {
   font-size: 3rem;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 700; /* Bold */
   color: #fff;
 }
@@ -59,6 +70,7 @@ p {
   max-width: 600px;
   margin: 20px 0;
   line-height: 1.5;
+  color: #fff;
 }
 
 button {
@@ -67,6 +79,12 @@ button {
   background: #fff;
   padding: 10px 20px;
   cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.3s, color 0.3s;
+}
+button:hover {
+  background-color: #333;
+  color: #fff;
 }
 
 .card {
@@ -74,30 +92,135 @@ button {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  margin: 20px 0;
 }
 .card .card-content {
   flex: 1;
   height: 300px;
   padding: 10px;
-  margin: 0 1rem;
-  font-family: "Roboto";
+  margin: 1rem;
+  font-family: "Roboto", sans-serif;
 }
 .card .card-content h1 {
   font-size: 3rem;
+  background-color: #000;
+  color: #fff;
 }
 .card .card-content p {
   margin: 20px 0;
   margin-bottom: 40px;
   line-height: 1.5;
+  color: #333;
 }
 .card .card-content a {
   text-decoration: none;
   background: #000;
   padding: 10px 20px;
   color: #fff;
+  transition: background-color 0.3s, color 0.3s;
+}
+.card .card-content a:hover {
+  background-color: #fff;
+  color: #333;
+  border: 2px solid #333;
+  border-radius: 20px;
+  transition: background-color 0.5s, color 0.5s;
 }
 .card .card-img {
-  width: 400px;
-  flex: 0 0 400px;
+  max-width: 400px;
+  flex: 1 1 auto;
   padding: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 2px solid #000;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery {
+  padding: 20px;
+  text-align: center;
+  margin-top: 6rem;
+}
+.gallery h1 {
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 20px;
+  color: #fff;
+  background-color: #000;
+}
+.gallery .images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+.gallery .gallery-img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.gallery .gallery-img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+footer .footer-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+footer .footer-container h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #fff;
+}
+footer .footer-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer-container form .form-group {
+  width: 100%;
+  margin-bottom: 15px;
+}
+footer .footer-container form .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1em;
+}
+footer .footer-container form .form-group input,
+footer .footer-container form .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+}
+footer .footer-container form .form-group input {
+  height: 40px;
+}
+footer .footer-container form .form-group textarea {
+  resize: vertical;
+}
+footer .footer-container form .send-btn {
+  background-color: skyblue;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+footer .footer-container form .send-btn:hover {
+  background-color: dodgerblue;
 }/*# sourceMappingURL=styles.css.map */
