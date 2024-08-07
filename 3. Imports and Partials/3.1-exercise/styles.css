@@ -10,6 +10,9 @@ nav {
   justify-content: space-between;
   padding: 15px;
   font-family: sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   background: white;
 }
@@ -67,7 +70,7 @@ button {
 }
 
 .card {
-  height: 80vh;
+  height: 60vh;
   display: flex;
   justify-content: center;
   align-items: flex-start;

@@ -12,8 +12,11 @@ nav {
   justify-content: space-between;
   padding: 15px;
   font-family: sans-serif;
-  //   position: fixed;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
+
   background: #ffff;
   .logo-container {
     margin-left: 40px;
@@ -69,7 +72,7 @@ button {
 
 // card
 .card {
-  height: 80vh;
+  height: 60vh;
   display: flex;
   justify-content: center;
   align-items: flex-start;
