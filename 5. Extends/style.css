@@ -2,4 +2,73 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+header {
+  height: 50vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.179), rgba(0, 0, 0, 0.65)), url("https://images.unsplash.com/photo-1606787366850-de6330128bfc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+header p {
+  margin-top: 20px;
+  max-width: 500px;
+  text-align: center;
+}
+
+.flex-center, .container .cards, header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.container {
+  height: 100vh;
+}
+.container .cards {
+  flex-direction: row;
+}
+.container .cards .card {
+  border: 0.6px solid rgb(168, 168, 168);
+  width: 500px;
+  height: 480;
+  padding: 20px;
+  margin: 20px;
+  margin-bottom: 20px;
+}
+.container .card-img, .container .img-four, .container .img-three, .container .img-two {
+  background-image: url("https://images.unsplash.com/photo-1543352634-99a5d50ae78e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+}
+.container .img-two {
+  background-image: url("https://images.unsplash.com/photo-1657299170932-e75407883a6a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80");
+}
+.container .img-three {
+  background-image: url("https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2053&q=80");
+}
+.container .img-four {
+  background-image: url("https://images.unsplash.com/photo-1594046243098-0fceea9d451e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+}
+.container p {
+  margin-bottom: 2rem;
+  width: 300px;
+  color: rgb(96, 96, 96);
+}
+.container .card-title {
+  margin-bottom: 10px;
+  color: rgb(28, 28, 28);
+}
+.container .btn-primary {
+  text-decoration: none;
+  color: #515151;
+  border: 1px solid #515151;
+  padding: 0.5rem 1rem;
 }/*# sourceMappingURL=style.css.map */
